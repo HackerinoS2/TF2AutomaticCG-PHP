@@ -29,9 +29,9 @@
     <!-- OPTION -->
     <label>Choose if you want to add items or update items:</label>
     <select name="option">
-      <option value="0">Add</option>
-      <option value="1">Update</option>
-      <option value="2">Remove</option>
+      <option value="add">Add</option>
+      <option value="update">Update</option>
+      <option value="remove">Remove</option>
     </select>
 
     <!--
