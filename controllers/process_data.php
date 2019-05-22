@@ -125,6 +125,34 @@ if($limit != ""){
 }
 
 /*
+ * Filtering the Add option defaults
+ */
+
+ if($quality == "&quality=Unique" && $option == "!add name="){
+    $quality = "";
+ }
+
+ if($craftable == "&craftable=true" && $option == "!add name="){
+   $craftable = "";
+}
+
+if($australium == "&australium=false" && $option == "!add name="){
+   $australium = "";
+}
+
+if($killstreak == "&killstreak=0" && $option == "!add name="){
+   $killstreak = "";
+}
+
+if($intent == "&intent=bank" && $option == "!add name="){
+   $intent = "";
+}
+
+if($limit == "&limit=1" && $option == "!add name="){
+   $limit = "";
+}
+
+/*
  * Prices
  */
 
