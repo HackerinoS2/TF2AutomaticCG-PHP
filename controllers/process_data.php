@@ -12,6 +12,7 @@ $intent = $_POST['intent'];
 $limit = $_POST['limit'];
 
 //Prices (Optional Data)
+$autoprice = "";
 $sell_keys = $_POST['sell_keys'];
 $sell_metal = $_POST['sell_metal'];
 $buy_keys = $_POST['buy_keys'];
@@ -32,7 +33,7 @@ switch($option){
    break;
 
    case "remove":
-   $option = "!remove name=";
+   $option = "!remove item=";
 }
 
 //Quality
@@ -147,9 +148,16 @@ if($buy_metal != ""){
    $buy_metal = "&buy_metal=".$buy_metal;
 }
 
+//Set autoprice
+if($sell_keys != "" && $sell_metal != "" && $buy_keys != "" && $buy_metal){
+   $autoprice = "&autoprice=false";
+}
+
 /*
+ *
  * Still need to manage how im going to update the output without reloading the page 
  * Also need to give a look of how im going to organize the variables values
+ * 
  */
 
  //Clean Output
@@ -157,15 +165,17 @@ if($buy_metal != ""){
 
 //Process Items
  foreach($items as $item){
+    if($option != "!remove item="){
       if(trim($item) != ""){
-      $output = $option.trim($item).$quality.$craftable.$australium.$killstreak.$effects.$intent.$limit."\n";
+      $output = $option.trim($item).$quality.$craftable.$australium.$killstreak.$effects.$autoprice.$sell_keys.$sell_metal.$buy_keys.$buy_metal.$intent.$limit."\n";
       echo $output."<br />";
+     }
+   } else if($option == "!remove item="){
+      if(trim($item) != ""){
+         $output = $option.trim($item)."\n";
+         echo $output."<br />";
+        }
    }
  }
 
  //Output Commands
-
-
-
-
-
