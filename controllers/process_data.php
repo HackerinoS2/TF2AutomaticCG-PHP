@@ -147,11 +147,6 @@ if($buy_metal != ""){
    $buy_metal = "&buy_metal=".$buy_metal;
 }
 
-
-
-
-
-
 /*
  * Still need to manage how im going to update the output without reloading the page 
  * Also need to give a look of how im going to organize the variables values
@@ -163,7 +158,7 @@ if($buy_metal != ""){
 //Process Items
  foreach($items as $item){
       if(trim($item) != ""){
-      $output = $option.$item.$quality.$craftable.$australium.$killstreak.$effects.$intent.$limit."\n";
+      $output = $option.trim($item).$quality.$craftable.$australium.$killstreak.$effects.$intent.$limit."\n";
       echo $output."<br />";
    }
  }
