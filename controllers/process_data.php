@@ -12,7 +12,7 @@ $intent = $_POST['intent'];
 $limit = $_POST['limit'];
 
 //Prices (Optional Data)
-$autoprice = "";
+$autoprice = "&autoprice=true";
 $sell_keys = $_POST['sell_keys'];
 $sell_metal = $_POST['sell_metal'];
 $buy_keys = $_POST['buy_keys'];
@@ -177,8 +177,15 @@ if($buy_metal != ""){
 }
 
 //Set autoprice
-if($sell_keys != "" && $sell_metal != "" && $buy_keys != "" && $buy_metal){
+if($sell_keys != "" || $sell_metal != "" || $buy_keys != "" || $buy_metal != ""){
    $autoprice = "&autoprice=false";
+}
+
+//Minimal check to the pricing
+if($sell_keys == "" || $sell_metal == "" || $buy_keys == "" || $buy_metal == ""){
+   if($autoprice == "&autoprice=false"){
+      echo "Make sure you fill pricing correctly";
+   }  
 }
 
 /*
