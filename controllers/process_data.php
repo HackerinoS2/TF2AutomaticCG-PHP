@@ -172,27 +172,6 @@ if($sell_keys != "" && $sell_metal != "" && $buy_keys != "" && $buy_metal != "" 
    die;
 }
 
-/* //Sell Keys
-if($sell_keys != ""){
-   $sell_keys = "&sell_keys=".$sell_keys;
-}
-
-//Sell Metal
-if($sell_metal != ""){
-   $sell_metal = "&sell_metal=".$sell_metal;
-}
-
-//Buy Keys
-if($buy_keys != ""){
-   $buy_keys = "&buy_keys=".$buy_keys;
-}
-
-//Buy Metal
-if($buy_metal != ""){
-   $buy_metal = "&buy_metal=".$buy_metal;
-} */
-
-
 /*
  *
  * Still need to manage how im going to update the output without reloading the page 
