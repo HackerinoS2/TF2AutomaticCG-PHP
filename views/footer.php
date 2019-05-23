@@ -6,7 +6,7 @@
                 target="_blank">Steam Trade Offer Link.</a>
                 <br /><br />
 
-                <i class="fab fa-github"></i> Want to colaborate with the project? Check the tool's <a href="#" target="_blank">GitHub Page!</a>
+                <i class="fab fa-github"></i> Want to colaborate with the project? Check the tool's <a href="https://github.com/HackerinoS2/TF2AutomaticCG-PHP" target="_blank">GitHub Page!</a>
                 <br /><br />
         </span>
 
