@@ -11,3 +11,21 @@ form label{
 #autoprice_form {
     display: none;
 }
+
+#footer-top{
+    padding: 40px 35px;
+    color: white;
+}
+
+#contribuite{
+    float: left;
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: rgb(72, 72, 255);
+}
