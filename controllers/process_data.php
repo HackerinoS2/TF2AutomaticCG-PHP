@@ -12,11 +12,11 @@ $intent = $_POST['intent'];
 $limit = $_POST['limit'];
 
 //Prices (Optional Data)
-$autoprice = "";
-$sell_keys = $_POST['sell_keys'];
-$sell_metal = $_POST['sell_metal'];
-$buy_keys = $_POST['buy_keys'];
-$buy_metal = $_POST['buy_metal'];
+$autoprice = "&autoprice=true";
+$sell_keys = trim($_POST['sell_keys']);
+$sell_metal = trim($_POST['sell_metal']);
+$buy_keys = trim($_POST['buy_keys']);
+$buy_metal = trim($_POST['buy_metal']);
 
 $output;
 
@@ -156,7 +156,23 @@ if($limit == "&limit=1" && $option == "!add name="){
  * Prices
  */
 
-//Sell Keys
+// Set autopricer
+if($sell_keys != "" || $sell_metal != "" || $buy_keys != "" || $buy_metal != ""){
+   $autoprice = "&autoprice=false";
+}
+
+//Prices
+if($sell_keys != "" && $sell_metal != "" && $buy_keys != "" && $buy_metal != "" && $autoprice == "&autoprice=false"){
+   $sell_keys = "&sell_keys=".$sell_keys;
+   $sell_metal = "&sell_metal=".$sell_metal;
+   $buy_keys = "&buy_keys=".$buy_keys;
+   $buy_metal = "&buy_metal=".$buy_metal;
+} else if($autoprice == "&autoprice=false"){
+   echo "Fill the prices correctly!";
+   die;
+}
+
+/* //Sell Keys
 if($sell_keys != ""){
    $sell_keys = "&sell_keys=".$sell_keys;
 }
@@ -174,12 +190,8 @@ if($buy_keys != ""){
 //Buy Metal
 if($buy_metal != ""){
    $buy_metal = "&buy_metal=".$buy_metal;
-}
+} */
 
-//Set autoprice
-if($sell_keys != "" && $sell_metal != "" && $buy_keys != "" && $buy_metal){
-   $autoprice = "&autoprice=false";
-}
 
 /*
  *
