@@ -21,7 +21,7 @@
 
 
 <!-- FORM -->
-<form class="container" method="post" action="./controllers/process_data.php">
+<form id="form" class="container" method="post" action="./controllers/process_data.php">
   <center>
 
     <br />
@@ -260,9 +260,33 @@
     <br /><br />
       <label>Output</label>
       <br />
-    <textarea name="output" cols=60 rows=7></textarea>
+    <textarea id="output" cols=60 rows=7></textarea>
     <br /><br /><br /><br />
 
     
   </center>
 </form>
+
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#form").submit(function(e) {
+      e.preventDefault();
+
+      var form = $(this);
+      var url = form.attr('action');
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: form.serialize(),
+        success: function (data) {
+          $('#output').text("");
+          $('#output').append(data);
+        }
+      });
+    });
+  })
+</script>
