@@ -177,13 +177,6 @@ if($autoprice == "&autoprice=true" && $option == "!add name="){
   $autoprice = "";
 }
 
-/*
- *
- * Still need to manage how im going to update the output without reloading the page 
- * Also need to give a look of how im going to organize the variables values
- * 
- */
-
  //Clean Output
  $output = "";
 
@@ -201,5 +194,3 @@ if($autoprice == "&autoprice=true" && $option == "!add name="){
         }
    }
  }
-
- //Output Commands
