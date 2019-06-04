@@ -229,7 +229,7 @@
     <!-- AUTOPRICER FORM -->
     <div id="autoprice_form">
         <br />
-        <h3>Insert Price</h3>
+        <h3>Set Price</h3>
   
         <br />
   
