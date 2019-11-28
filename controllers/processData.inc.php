@@ -2,11 +2,16 @@
 
 class ProcessData {
     //Properties
+    public $option;
     public $itemsArray; 
     public $quality;
     public $qualityList = ['Unique','Strange','Vintage','Genuine','Haunted','Unusual'];
 
     //Methods
+    function set_option($option) {
+        $this->option = $option;
+    }
+
     function split_items_into_array ($items) {
         $this->itemsArray = explode("\r\n",$items);
         return $this->itemsArray;
