@@ -1,0 +1,11 @@
+Still haves the "Disable autopricer" option and form
+Still haves the dropdown option to choose between "Add, Update, Remove";
+Insert item names;
+Quality, Craftable, Australium, Killstreak, Unusual effect
+Bank
+Limit
+
+What the tool will do?
+It will take the inserted items and will take piece by piece the item arguments.
+If the item haves this: "Unusual '72 Gibus" it will convert the 'Unusual' substring to the command "&quality=unusual" and the '´72' to "&effect='72".
+The same aplies to the rest.
