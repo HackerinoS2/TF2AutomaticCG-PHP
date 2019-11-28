@@ -13,13 +13,12 @@ class ProcessData {
     }
 
     function convert_quality_to_command ($string) {
-        //CHANGE THIS TO A FOREACH LOOP YOU DUMB DUCK
-        for ($i = 0; $i < sizeof($this->qualityList); $i++) {
-            if (strpos($string, $this->qualityList[$i]) !== false) {
+        foreach ($this->qualityList as $qualityName) {
+            if (strpos($string, $qualityName) !== false) {
                 //Removes the quality from string
-                $newString = str_ireplace($this->qualityList[$i], "", $string);
+                $newString = str_ireplace($qualityName, "", $string);
                 //Add quality command piece to propertie
-                $this->quality = '&quality='.$this->qualityList[$i];
+                $this->quality = '&quality='.$qualityName;
                 //Returns string without quality
                 return $newString;
                 break;
