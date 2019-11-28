@@ -17,9 +17,9 @@ class ProcessData {
             if (strpos($string, $qualityName) !== false) {
                 //Removes the quality from string
                 $newString = str_ireplace($qualityName, "", $string);
-                //Add quality command piece to propertie
+                //Add quality command piece to property
                 $this->quality = '&quality='.$qualityName;
-                //Returns string without quality
+                //Returns new string without quality name
                 return $newString;
                 break;
             } else {
