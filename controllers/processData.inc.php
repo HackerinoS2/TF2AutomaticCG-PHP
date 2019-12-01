@@ -3,33 +3,94 @@
 class ProcessData {
     //Properties
     public $option;
+
+    public $intent;
+    public $limit;
+
     public $itemsArray; 
+
     public $quality;
     public $qualityList = ['Unique','Strange','Vintage','Genuine','Haunted','Unusual'];
 
+    public $craftable;
+
+    public $australium;
+
+    public $killstreak;
+
+    public $effects;
+
     //Methods
     function set_option($option) {
-        $this->option = $option;
+        if ($option == 'remove') {
+            $this->option = '!'.$option.' item=';
+        } else {
+            $this->option = '!'.$option.' name=';
+        }
+        return $this->option;
     }
 
-    function split_items_into_array ($items) {
+    function set_items ($items) {
         $this->itemsArray = explode("\r\n",$items);
-        return $this->itemsArray;
     }
 
-    function convert_quality_to_command ($string) {
+    function set_intent($intent) {
+        $this->intent = '&intent='.$intent;
+    }
+    
+    function set_limit($limit) {
+        $this->limit = '&limit='.$limit;
+    }   
+
+    function convert_quality_to_command ($item) {
+        $qualityFound = false;
+
         foreach ($this->qualityList as $qualityName) {
-            if (strpos($string, $qualityName) !== false) {
-                //Removes the quality from string
-                $newString = str_ireplace($qualityName, "", $string);
-                //Add quality command piece to property
-                $this->quality = '&quality='.$qualityName;
-                //Returns new string without quality name
-                return $newString;
-                break;
-            } else {
-                $this->quality = '&quality='.$this->qualityList[0];
-            }
+                if (stripos($item, $qualityName) !== false) {
+                    //Removes the quality from string
+                    $newItem = str_ireplace($qualityName, "", $item);
+                    //Add quality command piece to property
+                    $this->quality = '&quality='.$qualityName;
+                    
+                    $qualityFound = true;
+
+                    return trim($newItem);
+                } 
+        }
+
+        if ($qualityFound === false) {
+            $this->quality = '&quality='.$this->qualityList[0];
+            return trim($item);
         }
     }
+
+    function convert_australium_to_command($item) {
+        if (stripos($item, "Australium") !== false) {
+             //Removes the australium from string
+             $newItem = str_ireplace("Australium", "", $item);
+             //Add australium command piece to property
+             $this->australium = '&australium=true';
+
+             return trim($newItem);
+        } else {
+            $this->australium = '&australium=false';
+            return $item;
+        }
+    }
+
+    function convert_craftable_to_command($item) {
+        if (stripos($item, "Uncraftable") !== false) {
+            //Removes the uncraftable from string
+            $newItem = str_ireplace("Uncraftable", "", $item);
+            //Add craftable command piece to property
+            $this->craftable = '&craftable=false';
+
+            return trim($newItem);
+       } else {
+           $this->craftable = '&craftable=true';
+           return $item;
+       }
+    }
+
+
 }
