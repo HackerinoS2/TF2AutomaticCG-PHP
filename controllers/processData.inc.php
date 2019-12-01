@@ -16,9 +16,12 @@ class ProcessData {
 
     public $australium;
 
+    //Do this ones in methods
     public $killstreak;
 
     public $effects;
+
+    public $sellKeys, $buyKeys, $sellRef, $buyRef
 
     //Methods
     function set_option($option) {
