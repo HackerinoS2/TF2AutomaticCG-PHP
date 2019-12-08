@@ -16,9 +16,9 @@ class ProcessData {
 
     public $australium;
 
-    //Do this ones in methods
+    
     public $killstreak;
-
+    //Do this ones in methods
     public $effects;
 
     public $sellKeys, $buyKeys, $sellRef, $buyRef;
@@ -92,6 +92,48 @@ class ProcessData {
        } else {
            $this->craftable = '&craftable=true';
            return $item;
+       }
+    }
+
+    function convert_killstreak_to_command($item) {
+        if (stripos($item, "Prof Killstreak") !== false) {
+            //Removes the killstreak from string
+            $newItem = str_ireplace("Prof Killstreak", "", $item);
+            //Add killstreak command piece to property
+            $this->killstreak = '&killstreak=3';
+
+            return trim($newItem);
+       } elseif (stripos($item, "Professional Killstreak") !== false) {
+            //Removes the killstreak from string
+            $newItem = str_ireplace("Professional Killstreak", "", $item);
+            //Add killstreak command piece to property
+            $this->killstreak = '&killstreak=3';
+
+            return trim($newItem);
+       } elseif (stripos($item, "Spec Killstreak") !== false) {
+            //Removes the killstreak from string
+            $newItem = str_ireplace("Spec Killstreak", "", $item);
+            //Add killstreak command piece to property
+            $this->killstreak = '&killstreak=2';
+
+            return trim($newItem);
+       } elseif (stripos($item, "Specialized Killstreak") !== false) {
+            //Removes the killstreak from string
+            $newItem = str_ireplace("Specialized Killstreak", "", $item);
+            //Add killstreak command piece to property
+            $this->killstreak = '&killstreak=2';
+
+            return trim($newItem);
+       } elseif (stripos($item, "Killstreak") !== false) {
+            //Removes the killstreak from string
+            $newItem = str_ireplace("Killstreak", "", $item);
+            //Add killstreak command piece to property
+            $this->killstreak = '&killstreak=1';
+
+            return trim($newItem);
+       } else {
+            $this->killstreak = '&killstreak=0';
+            return $item;
        }
     }
 
