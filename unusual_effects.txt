@@ -1,121 +1,145 @@
-'72
-Abduction
-Aces High
-Acidic Bubbles of Envy
-Amaranthine
-Ancient Codex
-Ancient Eldritch
-Anti-Freeze
-Arcana
-Atomic
-Blizzardy Storm
-Bonzo The All-Gnawing
-Brain Drain
-Bubbling
-Burning Flames
-Cauldron Bubbles
-Chiroptera Venenata
-Circling Heart
-Circling Peace Sign
-Circling TF Logo
-Clairvoyance
-Cloud 9
-Cloudy Moon
-Community Sparkle
-Darkblaze
-Dead Presidents
-Death at Dusk
-Death by Disco
-Demonflame
-Disco Beat Down
-Eerie Orbiting Fire
-Eldritch Flame
-Electric Hat Protector
-Electrostatic
-Ether Trail
-Flaming Lantern
-Flammable Bubbles of Attraction
-Fountain of Delight
-Frostbite
-Galactic Codex
-Galactic Gateway
-Ghastly Ghosts
-Ghastly Ghosts Jr
-Green Black Hole
-Green Confetti
-Green Energy
-Harvest Moon
-Haunted Ghosts
-Haunted Phantasm
-Haunted Phantasm Jr
-Head of Steam
-Hellfire
-Hellish Inferno
+Flying Bits
+Nemesis Burst
 Holy Glow
-Holy Grail
-Infernal Flames
-Infernal Smoke
-It's A Secret To Everybody
-It's a mystery to everyone
-It's a puzzle to me
-Kill-a-Watt
-Knifestorm
-Magnetic Hat Protector
-Map Stamps
+Green Confetti
+Purple Confetti
+Haunted Ghosts
+Green Energy
+Purple Energy
+Circling TF Logo
 Massed Flies
-Mega Strike
-Memory Leak
-Miami Nights
-Midnight Whirlwind
+Burning Flames
+Scorching Flames
+Searing Plasma
+Vivid Plasma
+Sunbeams
+Circling Peace Sign
+Circling Heart
+Stormy Storm
+Blizzardy Storm
+Nuts n' Bolts
+Orbiting Planets
+Eerie Orbiting Fire
+Orbiting Fire
+Bubbling
+Smoking
+Steaming
+Flaming Lantern
+Cloudy Moon
+Cauldron Bubbles
+Knifestorm
 Misty Skull
+Harvest Moon
+It's A Secret To Everybody
+Stormy 13th Hour
+Kill-a-Watt
+Terror-Watt
+Cloud 9
+Aces High
+Dead Presidents
+Miami Nights
+Disco Beat Down
+Phosphorous
+Sulphurous
+Memory Leak
+Overclocked
+Electrostatic
+Power Surge
+Anti-Freeze
+Time Warp
+Green Black Hole
+Roboactive
+Arcana
+Spellbound
+Chiroptera Venenata
+Poisoned Shadows
+Something Burning This Way Comes
+Hellfire
+Darkblaze
+Demonflame
+Bonzo The All-Gnawing
+Amaranthine
+Stare From Beyond
+The Ooze
+Ghastly Ghosts Jr
+Haunted Phantasm Jr
+Frostbite
 Molten Mallard
 Morning Glory
+Death at Dusk
+Abduction
+Atomic
+Subatomic
+Electric Hat Protector
+Magnetic Hat Protector
+Voltaic Hat Protector
+Galactic Codex
+Ancient Codex
 Nebula
+Death by Disco
+It's a mystery to everyone
+It's a puzzle to me
+Ether Trail
 Nether Trail
+Ancient Eldritch
+Eldritch Flame
 Neutron Star
-Nuts n' Bolts
-Ominous Night
-Omniscient Orb
-Open Mind
-Orbiting Fire
-Orbiting Planets
-Overclocked
-Phosphorous
-Poisoned Shadows
-Poisonous Bubbles of Regret
-Power Surge
-Purple Confetti
-Purple Energy
-Ring of Fire
-Roaring Rockets
-Roboactive
-Scorching Flames
-Screaming Tiger
-Searing Plasma
-Showstopper
-Silver Cyclone
-Skill Gotten Gains
-Smoking
-Something Burning This Way Comes
-Spectral Swirl
-Spellbound
-Spooky Night
-Stare From Beyond
+Tesla Coil
 Starstorm Insomnia
 Starstorm Slumber
-Steaming
-Stormy 13th Hour
-Stormy Storm
-Subatomic
-Sulphurous
-Sunbeams
-Terror-Watt
-Tesla Coil
-The Dark Doorway
+Brain Drain
+Open Mind
+Head of Steam
+The Galactic Gateway
 The Eldritch Opening
-The Ooze
-Time Warp
+The Dark Doorway
+Ring of Fire
 Vicious Circle
-Vivid Plasma
-Voltaic Hat Protector
 White Lightning
+Omniscient Orb
+Clairvoyance
+Fifth Dimension
+Vicious Vortex
+Menacing Miasma
+Abyssal Aura
+Wicked Wood
+Ghastly Grove
+Mystical Medley
+Ethereal Essence
+Twisted Radiance
+Violet Vortex
+Verdant Vortex
+Valiant Vortex
+Hot
+Isotope
+Cool
+Energy Orb
+Showstopper
+Holy Grail
+'72
+Fountain of Delight
+Screaming Tiger
+Skill Gotten Gains
+Midnight Whirlwind
+Silver Cyclone
+Mega Strike
+Haunted Phantasm
+Ghastly Ghosts
+Hellish Inferno
+Spectral Swirl
+Infernal Flames
+Infernal Smoke
+Acidic Bubbles of Envy
+Flammable Bubbles of Attraction
+Poisonous Bubbles of Regret
+Roaring Rockets
+Spooky Night
+Ominous Night
+Bewitched
+Accursed
+Enchanted
+Static Mist
+Eerie Lightning
+Terrifying Thunder
+Jarate Shock
+Nether Void
