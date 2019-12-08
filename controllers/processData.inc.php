@@ -19,7 +19,9 @@ class ProcessData {
     
     public $killstreak;
     //Do this ones in methods
-    public $effects;
+    public $effectsArray = json_decode('./unusual_effects.json');
+
+    public $effect;
 
     public $sellKeys, $buyKeys, $sellRef, $buyRef;
 
