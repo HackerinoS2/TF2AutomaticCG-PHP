@@ -21,7 +21,7 @@ class ProcessData {
 
     public $effects;
 
-    public $sellKeys, $buyKeys, $sellRef, $buyRef
+    public $sellKeys, $buyKeys, $sellRef, $buyRef;
 
     //Methods
     function set_option($option) {
