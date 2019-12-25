@@ -10,7 +10,7 @@ class ProcessData {
     public $itemsArray; 
 
     public $quality;
-    public $qualityList = ['Unique','Strange','Vintage','Genuine','Haunted','Unusual'];
+    public $qualityArray = ['Unique','Strange','Vintage','Genuine','Haunted','Unusual'];
 
     public $craftable;
 
@@ -50,7 +50,7 @@ class ProcessData {
     function convert_quality_to_command ($item) {
         $qualityFound = false;
 
-        foreach ($this->qualityList as $qualityName) {
+        foreach ($this->qualityArray as $qualityName) {
                 if (stripos($item, $qualityName) !== false) {
                     //Removes the quality from string
                     $newItem = str_ireplace($qualityName, "", $item);
@@ -64,7 +64,7 @@ class ProcessData {
         }
 
         if ($qualityFound === false) {
-            $this->quality = '&quality='.$this->qualityList[0];
+            $this->quality = '&quality='.$this->qualityArray[0];
             return trim($item);
         }
     }
