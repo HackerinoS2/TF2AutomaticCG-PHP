@@ -16,10 +16,11 @@ class ProcessData {
 
     public $australium;
 
-    
     public $killstreak;
-    //Do this ones in methods
-    public $effectsArray = json_decode('./unusual_effects.json');
+
+    public $effectsJSON = file_get_contents('../unusual_effects.json');
+
+    public $effectsArray = json_decode($effectsJSON, TRUE);
 
     public $effect;
 
@@ -60,7 +61,7 @@ class ProcessData {
                     $qualityFound = true;
 
                     return trim($newItem);
-                } 
+                }
         }
 
         if ($qualityFound === false) {
@@ -139,19 +140,17 @@ class ProcessData {
        }
     }
 
-    function convert_effect_to_command() {
-        $effectFound = false;
-
-        foreach ($this->effectsArray as $effectName) {
+    function convert_effect_to_command($item) {
+       foreach ($this->effectsArray as $effectName) {
                 if (stripos($item, $effectName) !== false) {
                     //Removes the unusual from string
                     $newItem = str_ireplace($effectName, "", $item);
                     //Add quality command piece to property
                     $this->effect = '&effect='.$effectName;
-                    
-                    $effectFound = true;
 
                     return trim($newItem);
                 } 
     }
+}
+
 }
