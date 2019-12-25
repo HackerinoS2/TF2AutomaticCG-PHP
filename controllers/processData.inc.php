@@ -139,5 +139,19 @@ class ProcessData {
        }
     }
 
+    function convert_effect_to_command() {
+        $effectFound = false;
 
+        foreach ($this->effectsArray as $effectName) {
+                if (stripos($item, $effectName) !== false) {
+                    //Removes the unusual from string
+                    $newItem = str_ireplace($effectName, "", $item);
+                    //Add quality command piece to property
+                    $this->effect = '&effect='.$effectName;
+                    
+                    $effectFound = true;
+
+                    return trim($newItem);
+                } 
+    }
 }
